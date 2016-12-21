@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.ybg.av.at"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:name=".app.ATApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.TextListActivity">
+        </activity>
+        <activity android:name=".activity.TextDetailActivity">
+        </activity>
+        <activity android:name=".activity.PicListActivity">
+        </activity>
+        <activity android:name=".activity.PicDetailActivity">
+        </activity>
+        <activity android:name=".activity.CatelogListActivity">
+        </activity>
+        <activity
+            android:name=".activity.SettingsActivity"
+            android:label="@string/title_activity_settings">
+        </activity>
+        <activity android:name=".activity.VideoListActivity">
+        </activity>
+        <activity android:name=".activity.VideoDetailActivity">
+        </activity>
+    </application>
+
+</manifest>
